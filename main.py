@@ -24,23 +24,24 @@ def jogar(cpu, player):
     print(f'O computador jogou {cpu}')
     print()
     if cpu == player:
-        print (" ============== EMPATE ============== ")
+        print (" ================ EMPATE! ================ ")
 
     # simples mas pode ser que tenha um jeito melhor de fazer
     # esse cruzamento para checar a combinação
     if player == "pedra" and cpu == "tesoura":
-        print (" ============== VITÓRIA ============== ")
+        print (" ================ VITÓRIA ================ ")
     if player == "pedra" and cpu == "papel":
-        print (" ============== DERROTA ============== ")
+        print (" ================ DERROTA ================ ")
     if player == "papel" and cpu == "tesoura":
-        print (" ============== DERROTA ============== ")
+        print (" ================ DERROTA ================ ")
     if player == "papel" and cpu == "pedra":
-        print (" ============== VITÓRIA ============== ")
+        print (" ================ VITÓRIA ================ ")
     if player == "tesoura" and cpu == "papel":
-        print (" ============== VITÓRIA ============== ")
+        print (" ================ VITÓRIA ================ ")
     if player == "tesoura" and cpu == "pedra":
-        print (" ============== DERROTA ============== ")
+        print (" ================ DERROTA ================ ")
     
-print (" ============== FIM DE JOGO ============== ")
+    print ()
+    print (" ============== FIM DE JOGO ============== ")
 
 jogar(jogada_cpu, jogada_jogador)       
